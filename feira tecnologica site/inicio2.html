@@ -26,8 +26,9 @@
       text-align: center;
       padding-top: 80px;
       font-size: 55px;
-      color: #fffb00;
+      color: #ffd000;
       letter-spacing: 2px;
+      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
     }
 
     .container {
@@ -37,12 +38,24 @@
     }
 
     header {
-      position: sticky;
+      position: relative;
       top: 0;
-      background: #ffee06;
-      border-bottom: 2px solid #e0d800;
+      background: #ffd000;
+      border-bottom: 2px solid #ffd000;
       z-index: 1000;
+      height: 80px;
     }
+  
+
+    header img {
+      width: 100px;       /* tamanho pequeno */
+      height: auto;      /* mantém proporção */
+      position: absolute;
+      top: -17px;         /* distância do topo */
+      left: 60px;        /* distância da esquerda (canto esquerdo) */
+    
+    }
+
 
     nav {
       display: flex;
@@ -70,13 +83,24 @@
       background: #1d065e;
       color: #ffee06;
     }
+    
+    
+    img {
+      text-align: center;
+    }
+  
+
+    
+  
   </style>
 </head>
 
 <body>
   <div id="top"></div>
   <header>
+  
     <div class="container">
+      <img src="imagem/Design sem nome (1).png" >
       <nav>
         <div class="inicio">Início</div>
         <div class="menu">
@@ -91,9 +115,14 @@
     </div>
   </header>
 
+   
+  <div class="livrinho-amarelo">
+    <img src="imagem/livrinho.png" >
+  </div>
+
   <h1>FILHOS DO QUARTO</h1>
-  <p>oi oi</p>
-  a emily me ama
   
+ 
+
 </body>
 </html>
