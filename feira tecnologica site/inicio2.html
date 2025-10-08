@@ -29,7 +29,6 @@
       color: #ffd000;
       letter-spacing: 2px;
       font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
-      
     }
 
     .i{
@@ -121,13 +120,60 @@
      margin-top: 250px;
      margin-left: 195px;
     }
-    .caixinhalivro {
-     width: 150px;
-     height: 150px;
-     background-color: #2ecc71;
-     padding: 20px;
+
+    .caixinhasobre {
+     background: #2b0e7a;
+     border-radius: 15px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+     padding: 30px;
+     width: 500px;
+     margin-left: auto;
+     margin-right: 20px;
+     margin-top: 290px;
     }
-    
+    .caixinhasobre h1 {
+      font-size:  28px;
+      font-weight: 700;
+      margin-bottom: 25px;
+      margin-right: 10px;
+      color: #ffee06;
+      transform: translateY(-90%);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+
+
+    .sinopse {
+      text-align: justify;
+      line-height: 1.6;
+      color: whitesmoke;
+    }
+
+    .detalhes {
+      display: flex;
+      gap: 100px;
+      margin-left: auto;
+      margin-right: 20px;
+      width: fit-content;
+    }
+
+    .detalhe-item {
+     background: #2b0e7a;
+     border-radius: 15px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+     padding: 20px;
+     width: 200px;
+     height: 150px;
+     margin-top: 30px;
+    }
+
+    .rot {
+      font-weight: 600;
+      min-width: 120px;
+      color: white;
+    }
+
   </style>
 </head>
 
@@ -160,18 +206,29 @@
   <h2 class="i">Por Elisabete Baptista</h2>
   <hr>
 
-  <div class="caixinhalivro">
-    <h2>Sobre o Livro</h2>
-    <p>sinopse</p>
-  </div>
-  <div class="paginas">
-    
-  </div>
-
-  <div class="outro-livro">
+   <div class="outro-livro">
     <img src="imagem/Design sem nome.png">
-
   </div>
- <o
+
+<div class="sobre">
+  <div class="caixinhasobre">
+    <h1>SOBRE O LIVRO</h1>
+
+    <div class="sinopse">
+      <p>sinopse</p>
+    </div>
+    </div>
+
+    <div class="detalhes">
+      <div class="detalhe-item">
+        <div class="rot">Páginas</div>
+        <div class="valor">112</div>
+      </div>
+      <div class="detalhe-item">
+        <div class="rot">Publicação</div>
+        <div class="valor">2023</div>
+      </div>
+    </div>
+</div>
 </body>
 </html>
