@@ -108,29 +108,31 @@
 
     .outro-livro {
      position: absolute;
-     width: 180px;
+     width: 225px;
      height: auto;
      float: left;
      transform: rotate(15deg);
-     margin-top: 250px;
-     margin-left: 195px;
+     margin-top: 80px;
+     margin-left: 175px;
     }
 
     .caixinhasobre {
      background: #2b0e7a;
      border-radius: 15px;
      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-     padding: 30px;
+     padding: 25px;
      width: 500px;
-     margin-left: auto;
-     margin-right: 20px;
+     margin-left: 725px;
+     margin-right: 8px;
      margin-top: 290px;
+     max-height: 550px;
+     
     }
     .caixinhasobre h1 {
       font-size:  28px;
       font-weight: 700;
       margin-bottom: 25px;
-      margin-right: 10px;
+      margin-right: 15px;
       color: #ffee06;
       transform: translateY(-90%);
       text-transform: uppercase;
@@ -139,14 +141,21 @@
 
     .sinopse {
       text-align: justify;
-      line-height: 1.6;
+      line-height: 1.8;
       color: whitesmoke;
+      font-family: Times, Times New Roman, serif;
+      font-size: 25px;
     }
+    .sinopse p {
+      position: relative;
+      top: -300px; 
+    }
+
 
     .detalhes {
       display: flex;
       gap: 100px;
-      margin-left: auto;
+      margin-left: 725px;
       margin-right: 20px;
       width: fit-content;
     }
