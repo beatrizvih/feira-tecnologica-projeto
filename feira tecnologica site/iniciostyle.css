@@ -1,3 +1,4 @@
+
   * {
       margin: 0;
       padding: 0;
@@ -17,7 +18,7 @@
 
     h1 {
       text-align: center;
-      padding-top: 215px;
+      padding-top: 310px;
       font-size: 55px;
       color: #ffd000;
       letter-spacing: 2px;
@@ -32,10 +33,10 @@
 
     hr {
     height: 2px;
-    background-color: #ffd000; 
+    background-color: #ffd000;
     right: 40px;
-    margin: 10px ; /* Adiciona um espaço de 20px acima e abaixo da linha */
-    width: 40%; 
+    margin: 10px ;
+    width: 40%;
     margin: 0 auto;
 }
 
@@ -45,31 +46,34 @@
       padding: 0 1rem;
     }
 
-    header {
-      position: relative;
-      top: 0;
-      background: #ffd000;
-      border-bottom: 2px solid #ffd000;
-      z-index: 1000;
-      height: 80px;
-    }
-  
-
-    header img {
-      width: 100px;    
-      height: auto;      
-      position: absolute;
-      top: -17px;       
-      left: 60px;        
-    
+    .navmenu {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background: #ffee06;
+     color: white;
+     padding: 15px 0;
+     z-index: 1000;
     }
 
+    .menu {
+     max-width: 1200px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     padding: 0 20px;
+     gap: 30px;
+    }
 
-    nav {
+    .logo {
+      width: 100px;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 0;
+      justify-content: flex-start;
+      top: -25px;
+      position: absolute;
+      height: auto
     }
 
     .inicio {
@@ -94,18 +98,16 @@
     
     
     .livrinho-amarelo {
-     position: absolute; 
-     width: 100px; 
+     position: absolute;
+     width: 100px;
      height: auto;
-     top: 200px; 
-     left: 50%; 
+     top: 200px;
+     left: 50%;
      transform: translateX(-50%);
-
-        
-
     }
   
     .outro-livro {
+     position: absolute;
      width: 180px;
      height: auto;
      float: left;
@@ -134,8 +136,6 @@
       text-transform: uppercase;
       letter-spacing: 1px;
     }
-
-
 
     .sinopse {
       text-align: justify;
