@@ -184,3 +184,52 @@
       color: white;
       text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     }
+
+    .outra-caixinha {
+     background: #2b0e7a;
+     border-radius: 15px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+     padding: 25px;
+     width: 500px;
+     margin-left: 105px;
+     margin-right: 5px;
+     margin-top: 250px;
+     max-height: 675px;
+     height: 500px;
+    }
+
+    .outra-caixinha h1 {
+      font-size:  28px;
+      font-weight: 700;
+      margin-bottom: 25px;
+      margin-right: 15px;
+      color: #ffee06;
+      transform: translateY(-90%);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .Autora {
+      text-align: justify;
+      line-height: 1.4;
+      color: whitesmoke;
+      font-family: Times, Times New Roman, serif;
+      font-size: 20px;
+      letter-spacing: 1px; 
+
+    }
+
+    .Autora p {
+      position: relative;
+      top: -325px; 
+    }
+
+    .imagem-Autora img {
+      width: 341px; 
+      height: 256px;
+      margin-left: 725px;
+      margin-right: 8px;
+      top: -625px;
+      position: relative;
+      border-radius: 15px;
+    }
