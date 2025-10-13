@@ -246,9 +246,10 @@
       margin-bottom: 10px;
     }
 
-    .PERSONAGENS h1 {
+    .personagens h1 {
       text-align: center;
       color: #ffd000;
       font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+      padding-top: 100px;
     }
     
