@@ -108,17 +108,17 @@
 
     .outro-livro {
      position: absolute;
-     width: 225px;
+     width: 200px;
      height: auto;
      float: left;
-     transform: rotate(15deg);
+     transform: rotate(15deg) scale(1.3);
      margin-top: 80px;
      margin-left: 175px;
     }
 
     .caixinhasobre {
-     background: #2b0e7a;
-     border-radius: 15px;
+     background: linear-gradient(180deg, #2b0e7a, #0e0425);
+     border-radius: 30px;
      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
      padding: 25px;
      width: 500px;
@@ -148,7 +148,7 @@
     }
     .sinopse p {
       position: relative;
-      top: -300px; 
+      top: -300px;
     }
 
 
@@ -161,8 +161,8 @@
     }
 
     .detalhe-item {
-     background: #2b0e7a;
-     border-radius: 15px;
+     background: linear-gradient(180deg, #2b0e7a, #0e0425);
+     border-radius: 30px;
      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
      padding: 20px;
      width: 200px;
@@ -186,8 +186,8 @@
     }
 
     .outra-caixinha {
-     background: #2b0e7a;
-     border-radius: 15px;
+     background: linear-gradient(180deg, #2b0e7a, #0e0425);
+     border-radius: 30px;
      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
      padding: 25px;
      width: 500px;
@@ -215,21 +215,35 @@
       color: whitesmoke;
       font-family: Times, Times New Roman, serif;
       font-size: 20px;
-      letter-spacing: 1px; 
+      letter-spacing: 1px;
 
     }
 
     .Autora p {
       position: relative;
-      top: -325px; 
+      top: -325px;
+    }
+
+    .imagem-Autora {
+      max-width: 800px;
     }
 
     .imagem-Autora img {
-      width: 341px; 
-      height: 256px;
-      margin-left: 725px;
-      margin-right: 8px;
-      top: -625px;
+      width: 560px;
+      height: auto;
+      margin-left: 600px;
+      margin-right: 2px;
+      top: -1050px;
       position: relative;
-      border-radius: 15px;
+      border-radius: 30px;
+      bottom: 100px;
     }
+
+    .imagem-Autora h1 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    
