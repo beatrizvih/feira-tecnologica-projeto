@@ -354,5 +354,48 @@
       right: 3px;
     }
 
+    .linha hr {
+     border: none;              
+     height: 2px;
+     background-color: #dfdf06; 
+     width: 70%;
+     margin: 0 auto;
+    }
+
+    .caixa-irmãos h4 {
+      text-align: center;
+      color: #fffbe8;
+      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+      position: relative;
+      top: -2px;
+      right: 4px;
+    }
+
+    .caixa-mãe-padastro h4 {
+      text-align: center;
+      color: #fffbe8;
+      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+      position: relative;
+      top: -2px;
+      right: 1px;
+    }
+
+    .caixa-idosos h4 {
+      text-align: center;
+      color: #fffbe8;
+      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+      position: relative;
+      top: -2px;
+      right: 3px;
+    }
+
+    .linha1 hr {
+     border: none;              
+     height: 2px;
+     background-color: #dfdf06; 
+     width: 70%;
+     margin: 215px auto 0 auto;
+    }
+
     
     
