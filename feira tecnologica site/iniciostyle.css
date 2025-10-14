@@ -294,7 +294,7 @@
     .caixa-irmãos img {
       margin-left: 20px;
       position: relative;
-      top: -4px;
+      top: -9px;
 
     }
 
@@ -319,13 +319,39 @@
     .caixa-mãe-padastro img {
       margin-left: 20px;
       position: relative;
-      top: -4px;
+      top: -9px;
     }
 
     .caixa-idosos img {
       margin-left: 20px;
       position: relative;
-      top: -4px;
+      top: -9px;
+    }
+
+    .caixa-irmãos h3 {
+      text-align: center;
+      color: #ffd000;
+      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+      position: relative;
+      top: -20px;
+      right: 4px;
+    }
+    .caixa-mãe-padastro h3 {
+      text-align: center;
+      color: #ffd000;
+      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+      position: relative;
+      top: -20px;
+      right: 3px;
+    }
+
+    .caixa-idosos h3 {
+      text-align: center;
+      color: #ffd000;
+      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+      position: relative;
+      top: -20px;
+      right: 3px;
     }
 
     
