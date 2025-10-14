@@ -397,5 +397,17 @@
      margin: 215px auto 0 auto;
     }
 
+    .link-outro {
+     text-align: center; 
+    }
+
+    .link-outro a {
+     color: #ffd000;
+     font-family: "Century Schoolbook", "TeX Gyre Schola", serif; 
+     display: inline-block;
+     margin-top: 70px;  
+    }
+
+
     
     
