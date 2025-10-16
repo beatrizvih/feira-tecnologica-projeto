@@ -1,0 +1,19 @@
+body {
+    background: #1d065e;
+
+}
+h1 {
+    text-align: center;
+    color: #ffd000;
+    font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+    font-size: 55px;
+}
+hr {
+     height: 1px;
+     background-color: #ffd000;
+     right: 40rem;
+     margin: 10rem ;
+     width: 80%;
+     margin: 0 auto;
+     border: none;
+}
