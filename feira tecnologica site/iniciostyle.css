@@ -410,6 +410,56 @@
      width: 70%;
      margin: 85px auto 0 auto;
     }
+    .caixas-temas {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     flex-wrap: wrap;
+    }
+ 
+     .caixa-tema1 {
+      background: linear-gradient(180deg, #2b0e7a, #0e0425);
+      border-radius: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      padding: 25px;
+      width: 250px;
+      top: -100;
+      }
+
+    .caixa-tema2 {
+      background: linear-gradient(180deg, #2b0e7a, #0e0425);
+      border-radius: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      padding: 25px;
+      width: 250px;
+      top: -100;
+      }
+
+    .caixa-tema3 {
+      background: linear-gradient(180deg, #2b0e7a, #0e0425);
+      border-radius: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      padding: 25px;
+      width: 250px;
+      top: -100;
+      }
+
+    .caixas-temas {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     flex-wrap: wrap;
+    }
+
+    .caixa-tema1 h2 {
+     text-align: center;
+     color: #ffd000;
+     font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+     position: relative;
+     top: -20px;
+     right: 3px;
+    }
+ 
 
 
     
