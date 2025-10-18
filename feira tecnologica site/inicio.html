@@ -103,11 +103,10 @@
   <a href="https://br.linkedin.com/in/robson-araujo-aa928934">Linkedin</a>
 
   <div class="caixa-ilustrador">
-      <div class="biogarfia"><h1>BIOGRAFIA</h1></div>
+      <div class="biografia">BIOGRAFIA</div>
       <h2>Robson Araújo</h2>
       <p>Robson Araújo é um ilustrador brasileiro com vasta experiência em livros didáticos e literatura infantojuvenil. Sua carreira inclui obras como O mundo de Mariana, Marcado para Bater e Com quem está o Chapéu?, publicadas pela Editora Lê. Além disso, ele atua como ilustrador em um grande jornal e realiza trabalhos artísticos em pintura e escultura.</p>
     </div>
-  </div>
 </section>
 
 <section id="personagens">
@@ -122,10 +121,12 @@
 <div class="DIVIZONAS">
 
   <div class="card">
-    <h3>OS DOIS IRMÃOS</h3>
+    <div class="card-titulo">OS DOIS IRMÃOS</div>
+    <div class="card-conteudo">
     <img src="imagem/primeira imagem menino amarelo.jpg" >
-    <h4>ALICIA E PEDRO</h4>
-    <div class="descricao">
+    <h3>ALICIA E PEDRO</h3>
+    </div>
+    <div class="card-descricao">
       <p><strong>Alicia:</strong> Alicia é uma menina difícil. Ela lidou mal com a transferência de escola
       e com tudo o que aconteceu com o pai. Ficou desobediente e causou muita
       preocupação, pois, por ser adolescente, parecia reagir de forma complicada a
@@ -144,10 +145,12 @@
   </div>
 
   <div class="card">
-    <h3>A MÃE E PADASTRO</h3>
+    <div class="card-titulo">A MÃE E PADASTRO</div>
+    <div class="card-conteudo">
     <img src="imagem/outra imagem casal amarela.jpg">
-    <h4>TEREZA E FRANCISCO</h4>
-    <div class="descricao">
+    <h3>TEREZA E FRANCISCO</h3>
+    </div>
+    <div class="card-descricao">
       <p><strong>Tereza:</strong> Tereza é uma mulher forte, corajosa, determinada e resiliente, mas foi
       seriamente afetada pelo trágico acidente. Ela foi uma das que mais sofreu,
       entrou em depressão e, por um tempo, deixou de cuidar dos próprios filhos; o
@@ -166,10 +169,12 @@
   </div>
 
   <div class="card">
-    <h3>OS AVÓS</h3>
+    <div class="card-titulo">OS AVÓS</div>
+    <div class="card-conteudo">
     <img src="imagem/idosos imagem.jpg" >
-    <h4>CARMEN E ALVÁRO</h4>
-    <div class="descricao">
+    <h3>CARMEN E ALVÁRO</h3>
+    </div>
+    <div class="card-descricao">
       <p><strong>Carmen:</strong> Carmen é mãe de Tereza, uma mulher já de idade que ama suas filhas
       e, ainda mais, seus netos. É uma mulher muito doce e gentil, sempre disposta a
       ajudar os outros. Ela não era exatamente próxima do falecido genro, mas
@@ -186,10 +191,11 @@
       um grande amigo de Francisco, um antigo amigo de sua filha.</p>
     </div>
   </div>
-
-<div class="link">
-  <a href="outros.html">Outros Personagens</a>
 </div>
+
+  <a class="link" href="outros.html">Outros Personagens</a>
+
+
 </section>
 
 <div class="linha3">
@@ -266,6 +272,14 @@
   </div>
 </section>
 
-<script src="charada.js"></script>
+<script src="charada.js"> function expandCard(card) {
+  const content = card.querySelector('.card-content');
+  content.style.height = content.scrollHeight + 'px';
+}
+
+function collapseCard(card) {
+  const content = card.querySelector('.card-content');
+  content.style.height = '0';
+}</script>
 </body>
 </html>
