@@ -127,6 +127,7 @@
      margin-right: 8px;
      margin-top: 290px;
      max-height: 550px;
+     
     }
     .caixinhasobre h1 {
       font-size:  28px;
@@ -150,6 +151,7 @@
       position: relative;
       top: -300px;
     }
+
 
     .detalhes {
       display: flex;
@@ -219,7 +221,6 @@
     }
 
     .Autora p {
-      text-align: center;
       position: relative;
       top: -325px;
     }
@@ -268,98 +269,26 @@
       margin-bottom: 10px;
     }
 
-    .container-ilustrador {
-      padding-left: 13rem;
-      padding-top: 6rem;
-    }
-    .ilustrador {
-      font-size: 30px;
-      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
-      text-align: justify;
-      color: #ffee06;
-      font-weight: 700;
-      padding-left: 3rem;
-    }
-
-    #ilustrador h2 {
-      position: relative;
-      font-size: 40px;
-      color: #ffee06;
-      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
-      text-align: center;
-      padding-top: 10rem;
-    }
-
-    #ilustrador img {
-      width: 300px;
-      border-radius: 20px;
-    }
-
-    #ilustrador h3 {
-      text-align: justify;
-      padding-left: 5.5rem;
-      font-family: Times, Times New Roman, serif;
-    }
-
-    #ilustrador a {
-      text-align: justify;
-      padding-left: 7.4rem;
-      color: white;
-      text-decoration: overline;
-      font-family: Times, Times New Roman, serif;
-    }
-
-    .caixa-ilustrador {
-     background: linear-gradient(180deg, #2b0e7a, #0e0425);
-     border-radius: 30px;
-     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-     padding: 10px;
-     width: 500px;
-     margin-top: -23rem;
-     margin-left: 32rem;
-    }
-
-    .caixa-ilustrador h2 {
-      margin-top: -10rem;
-    }
-
-    .caixa-ilustrador p {
-      text-align: center;
-      margin-top: 2rem;
-      margin-bottom: 3rem;
-    }
-
     .personagens h1 {
       text-align: center;
       color: #ffd000;
       font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
-<<<<<<< HEAD
       padding-top: 100px;
     }
 
-=======
-      padding-top: 15rem;
-    }
->>>>>>> abb363b2ade5c1b1e85c57ab2b3c12212fd2e5b3
 
     .DIVIZONAS {
       display: flex;
-      gap: 20px;
-      padding: 30px;
-      justify-content: center;
-      align-items: flex-start;
-      max-width: 1200px;
-      margin: 0 auto;
+      justify-content: space-between;
+      margin-top: 125px;
+      padding: 0 80px;
     }
 
-    .card {
-      flex: 1;
-      background: linear-gradient(180deg, #2b0e7a, #0e0425);
-      border-radius: 20px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      overflow: hidden;
-      transition: all 0.3s ease;
-      max-width: 300px;
+    .caixa-irmãos img {
+      margin-left: 20px;
+      position: relative;
+      top: -9px;
+
     }
     
     .caixa-irmãos {
@@ -371,56 +300,95 @@
      top: -100;
     }
 
-    .card-titulo {
+    .caixa-mãe-padastro {
+     background: linear-gradient(180deg, #2b0e7a, #0e0425);
+     border-radius: 30px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+     padding: 25px;
+     width: 250px;
+     top: -100;
+    }
+
+    .caixa-idosos{
+     background: linear-gradient(180deg, #2b0e7a, #0e0425);
+     border-radius: 30px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+     padding: 25px;
+     width: 250px;
+     top: -100;
+    }
+    
+    .caixa-mãe-padastro img {
+      margin-left: 20px;
+      position: relative;
+      top: -9px;
+    }
+
+    .caixa-idosos img {
+      margin-left: 20px;
+      position: relative;
+      top: -9px;
+    }
+
+    .caixa-irmãos h3 {
       text-align: center;
       color: #ffd000;
-      font-weight: bold;
       font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+      position: relative;
+      top: -20px;
+      right: 4px;
     }
-
-    .card-conteudo {
-      padding: 20px;
-      font-weight: bold;
+    .caixa-mãe-padastro h3 {
       text-align: center;
-      font-family: Times, Times New Roman, serif;
-      background-color: linear-gradient(180deg, #2b0e7a, #0e0425);
+      color: #ffd000;
+      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+      position: relative;
+      top: -20px;
+      right: 3px;
     }
 
-    .card-descricao {
-      padding: 0 20px;
-      height: 0;
-      overflow: hidden;
-      transition: height 0.3s ease;
+    .caixa-idosos h3 {
+      text-align: center;
+      color: #ffd000;
+      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+      position: relative;
+      top: -20px;
+      right: 3px;
     }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-      background: linear-gradient(180deg, #2b0e7a, #0e0425);
-    }
-
-    .card:hover .card-descricao {
-      height: auto;
-      padding: 20px;
-      background: linear-gradient(180deg, #2b0e7a, #0e0425);
-    }
-
-    .link {
-      display: flex;
-      flex-direction: column;
-      text-align: end;
-      font-family: Times, Times New Roman, serif;
-      color: whitesmoke;
-      font-size: 1.5rem;
-    }
-
 
     .linha hr {
      border: none;
      height: 2px;
-     background-color: #dfdf06;
+     background-color: #dfdf06; 
      width: 70%;
      margin: 0 auto;
+    }
+
+    .caixa-irmãos h4 {
+      text-align: center;
+      color: #fffbe8;
+      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+      position: relative;
+      top: -2px;
+      right: 4px;
+    }
+
+    .caixa-mãe-padastro h4 {
+      text-align: center;
+      color: #fffbe8;
+      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+      position: relative;
+      top: -2px;
+      right: 1px;
+    }
+
+    .caixa-idosos h4 {
+      text-align: center;
+      color: #fffbe8;
+      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+      position: relative;
+      top: -2px;
+      right: 3px;
     }
 
     .linha1 hr {
@@ -626,28 +594,5 @@
     top: -185px;
   }
 
-  .caixa-ilustrador h2 {
-    text-align: center;
-    color: #ffd000;
-    font-size: 25px;
-    position: relative;
-    top: -120px;
-    z-index: 10;
-  }
 
-  .caixa-ilustrador p {
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    position: relative;
-    top: -50px;
-  }
-
-  .linha-ilustra {
-    border: none;
-    height: 2px;
-    background-color: #dfdf06; 
-    width: 70%;
-    margin: 95px auto 0 auto;
-  }
 
