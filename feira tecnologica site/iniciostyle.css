@@ -269,7 +269,20 @@
       margin-bottom: 10px;
     }
 
-    #ilustrador h2{
+    .container-ilustrador {
+      padding-left: 4rem;
+      padding-top: 6rem;
+    }
+    .ilustrador {
+      font-size: 30px;
+      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+      text-align: justify;
+      color: #ffee06;
+      font-weight: 700;
+      padding-left: 3rem;
+    }
+
+    #ilustrador h2 {
       position: relative;
       font-size: 40px;
       color: #ffee06;
@@ -277,6 +290,67 @@
       text-align: center;
       padding-top: 10rem;
     }
+
+    #ilustrador img {
+      width: 300px;
+      border-radius: 20px;
+      flex-shrink: 0;
+    }
+
+    #ilustrador h3 {
+      text-align: justify;
+      padding-left: 5.5rem;
+      font-family: Times, Times New Roman, serif;
+    }
+
+    #ilustrador a {
+      text-align: justify;
+      padding-left: 7.4rem;
+      color: white;
+      text-decoration: overline;
+      font-family: Times, Times New Roman, serif;
+    }
+
+    .caixa-ilustrador {
+  flex: 1;
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.caixa-ilustrador h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.caixa-ilustrador p {
+  line-height: 1.6;
+  text-align: justify;
+  margin: 0;
+  color: #555;
+}
+    .caixa-ilustrador {
+  flex: 1;
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.caixa-ilustrador h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.biografia-box p {
+  line-height: 1.6;
+  text-align: justify;
+  margin: 0;
+  color: #555;
+}
 
     .personagens h1 {
       text-align: center;
@@ -490,55 +564,5 @@
     transform: scale(1.2);
   }
 
-  .ilustrador h2 {
-    text-align: center;
-    font-family: Times, Times New Roman, serif;
-    color: #ffd000;
-    margin-top: 100;
-    font-size: 55px;
-    transform: translateY(80px);
-  }
-  .nome h3 {
-    text-align: center;
-    color: #ffd000;
-    font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
-    position: relative;
-    top: 210px;
-    right: 3px;
-    z-index: 10;
-    font-size: 25px;
-
-  }
-
-  .robson-img {
-    background: linear-gradient(180deg, #2b0e7a, #0e0425);
-    border-radius: 30px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    width: 350px;
-    height: 350px;
-    margin-left: 490px;
-    margin-right: 0px;
-    position: relative;
-    bottom: -155px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-
-  .robson-img img {
-    max-width: 200%;
-    max-height: 200%;
-    object-fit: cover;
-    border-radius: 20px;
-  }
-
-  .linkedin a  {
-    position: relative;  
-    top: 105px;
-    right: -635px;
-    color: white;
-    text-decoration: overline;
-  }
+  
 
