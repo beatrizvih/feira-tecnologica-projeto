@@ -541,5 +541,15 @@
     transform: scale(1.2);
   }
 
-  
+  .back-to-top{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 999px;
+    background: #ffd000;
+    border: 1px solid #180a3f;
+    color: #180a3f;
+    text-decoration: none;
+}
 
