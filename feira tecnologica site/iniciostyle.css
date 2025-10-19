@@ -594,5 +594,27 @@
     top: -185px;
   }
 
+  .caixa-ilustrador h1 {
+    text-align: center;
+    color: #ffd000;
+    font-size: 45px;
+    position: relative;
+    top: -85px;
+  }
+
+  .caixa-ilustrador h2 {
+    text-align: center;
+    color: #ffd000;
+    font-size: 25px;
+    position: relative;
+    top: -45px;
+  }
+
+  .caixa-ilustrador p {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 25px;
+  }
+
 
 
