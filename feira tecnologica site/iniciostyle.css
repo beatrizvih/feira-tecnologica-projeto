@@ -127,7 +127,6 @@
      margin-right: 8px;
      margin-top: 290px;
      max-height: 550px;
-     
     }
     .caixinhasobre h1 {
       font-size:  28px;
@@ -151,7 +150,6 @@
       position: relative;
       top: -300px;
     }
-
 
     .detalhes {
       display: flex;
@@ -221,6 +219,7 @@
     }
 
     .Autora p {
+      text-align: center;
       position: relative;
       top: -325px;
     }
@@ -270,7 +269,7 @@
     }
 
     .container-ilustrador {
-      padding-left: 4rem;
+      padding-left: 13rem;
       padding-top: 6rem;
     }
     .ilustrador {
@@ -294,7 +293,6 @@
     #ilustrador img {
       width: 300px;
       border-radius: 20px;
-      flex-shrink: 0;
     }
 
     #ilustrador h3 {
@@ -312,51 +310,30 @@
     }
 
     .caixa-ilustrador {
-  flex: 1;
-  background: #f8f9fa;
-  padding: 25px;
-  border-radius: 8px;
-  border: 1px solid #e0e0e0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
+     background: linear-gradient(180deg, #2b0e7a, #0e0425);
+     border-radius: 30px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+     padding: 10px;
+     width: 500px;
+     margin-top: -23rem;
+     margin-left: 32rem;
+    }
 
-.caixa-ilustrador h2 {
-  margin-bottom: 15px;
-  color: #333;
-}
+    .caixa-ilustrador h2 {
+      margin-top: -10rem;
+    }
 
-.caixa-ilustrador p {
-  line-height: 1.6;
-  text-align: justify;
-  margin: 0;
-  color: #555;
-}
-    .caixa-ilustrador {
-  flex: 1;
-  background: #f8f9fa;
-  padding: 25px;
-  border-radius: 8px;
-  border: 1px solid #e0e0e0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.caixa-ilustrador h2 {
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.biografia-box p {
-  line-height: 1.6;
-  text-align: justify;
-  margin: 0;
-  color: #555;
-}
+    .caixa-ilustrador p {
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+    }
 
     .personagens h1 {
       text-align: center;
       color: #ffd000;
       font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
-      padding-top: 100px;
+      padding-top: 20rem;
     }
 
     .DIVIZONAS {
