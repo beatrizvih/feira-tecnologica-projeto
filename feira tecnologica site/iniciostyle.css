@@ -276,14 +276,6 @@
       padding-top: 100px;
     }
 
-    .caixa-irmãos {
-     background: linear-gradient(180deg, #2b0e7a, #0e0425);
-     border-radius: 30px;
-     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-     padding: 25px;
-     width: 250px;
-     top: -100;
-    }
 
     .DIVIZONAS {
       display: flex;
@@ -297,6 +289,15 @@
       position: relative;
       top: -9px;
 
+    }
+    
+    .caixa-irmãos {
+     background: linear-gradient(180deg, #2b0e7a, #0e0425);
+     border-radius: 30px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+     padding: 25px;
+     width: 250px;
+     top: -100;
     }
 
     .caixa-mãe-padastro {
@@ -409,7 +410,7 @@
      height: 2px;
      background-color: #dfdf06; 
      width: 70%;
-     margin: 85px auto 0 auto;
+     margin: 12px auto 0 auto;
     }
     .caixas-temas {
      display: flex;
@@ -462,17 +463,19 @@
     }
  
 
-    .link {
+    .link-pagina {
       margin: 5rem;
       text-align: center;
       z-index: 1;
       position: relative;
+      top: 25px;
     }
 
-    .link a{
+    .link-pagina a{
       font-family: Times, Times New Roman, serif;
       color: whitesmoke;
       font-size: 1.5rem;
+      text-align: center;
     }
 
     #charadas h1{
@@ -528,7 +531,7 @@
     font-family: Times, Times New Roman, serif;
     color: #ffd000;
     margin-top: 100;
-    font-size: 55px;
+    font-size: 50px;
     transform: translateY(80px);
   }
   .nome h3 {
@@ -573,5 +576,46 @@
     right: -635px;
     color: white;
     text-decoration: overline;
+  }
+
+  .temas-ti {
+    text-align: center;
+    color: #dfdf06;
+    font-size: 25px;
+    top: -250px;
+    position: relative;
+  }
+
+  .biografia h1 {
+    text-align: center;
+    color: #ffd000;
+    font-size: 37px;
+    position: relative;
+    top: -185px;
+  }
+
+  .caixa-ilustrador h2 {
+    text-align: center;
+    color: #ffd000;
+    font-size: 25px;
+    position: relative;
+    top: -120px;
+    z-index: 10;
+  }
+
+  .caixa-ilustrador p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: -50px;
+  }
+
+  .linha-ilustra {
+    border: none;
+    height: 2px;
+    background-color: #dfdf06; 
+    width: 70%;
+    margin: 95px auto 0 auto;
   }
 
