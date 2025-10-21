@@ -16,5 +16,14 @@ function revelarCharada(){
         respostaVisivel = !respostaVisivel
 }
 
+function expandCard(card) {
+  const content = card.querySelector('.descricao');
+  content.style.height = content.scrollHeight + 'px';
+}
+
+function collapseCard(card) {
+  const content = card.querySelector('.descricao');
+  content.style.height = '0';
+}
 
 botaoCharada.addEventListener('click', revelarCharada)

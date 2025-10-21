@@ -279,82 +279,51 @@
 
     .DIVIZONAS {
       display: flex;
-      justify-content: space-between;
-      margin-top: 125px;
-      padding: 0 80px;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
-    .caixa-irmãos img {
-      margin-left: 20px;
-      position: relative;
-      top: -9px;
-
-    }
-    
-    .caixa-irmãos {
-     background: linear-gradient(180deg, #2b0e7a, #0e0425);
-     border-radius: 30px;
-     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-     padding: 25px;
-     width: 250px;
-     top: -100;
-    }
-
-    .caixa-mãe-padastro {
-     background: linear-gradient(180deg, #2b0e7a, #0e0425);
-     border-radius: 30px;
-     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-     padding: 25px;
-     width: 250px;
-     top: -100;
-    }
-
-    .caixa-idosos{
-     background: linear-gradient(180deg, #2b0e7a, #0e0425);
-     border-radius: 30px;
-     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-     padding: 25px;
-     width: 250px;
-     top: -100;
-    }
-    
-    .caixa-mãe-padastro img {
-      margin-left: 20px;
-      position: relative;
-      top: -9px;
-    }
-
-    .caixa-idosos img {
-      margin-left: 20px;
-      position: relative;
-      top: -9px;
-    }
-
-    .caixa-irmãos h3 {
+    .card {
+      flex: 1;
+      background: linear-gradient(180deg, #2b0e7a, #0e0425);
+      border-radius: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      max-width: 300px;
       text-align: center;
-      color: #ffd000;
-      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
-      position: relative;
-      top: -20px;
-      right: 4px;
-    }
-    .caixa-mãe-padastro h3 {
-      text-align: center;
-      color: #ffd000;
-      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
-      position: relative;
-      top: -20px;
-      right: 3px;
     }
 
-    .caixa-idosos h3 {
-      text-align: center;
-      color: #ffd000;
+    .card h3 {
+      font-size: 22px;
       font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
-      position: relative;
-      top: -20px;
-      right: 3px;
+      color: #ffd000;
     }
+
+    .card img {
+      display: inline-block;
+    }
+
+    .card h4 {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .descricao {
+      height: 0;
+      overflow: hidden;
+      transition: height 0.5s ease;
+      padding: 0 20px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
 
     .linha hr {
      border: none;
@@ -362,33 +331,6 @@
      background-color: #dfdf06; 
      width: 70%;
      margin: 0 auto;
-    }
-
-    .caixa-irmãos h4 {
-      text-align: center;
-      color: #fffbe8;
-      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
-      position: relative;
-      top: -2px;
-      right: 4px;
-    }
-
-    .caixa-mãe-padastro h4 {
-      text-align: center;
-      color: #fffbe8;
-      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
-      position: relative;
-      top: -2px;
-      right: 1px;
-    }
-
-    .caixa-idosos h4 {
-      text-align: center;
-      color: #fffbe8;
-      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
-      position: relative;
-      top: -2px;
-      right: 3px;
     }
 
     .linha1 hr {
