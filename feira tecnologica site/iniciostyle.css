@@ -1,562 +1,436 @@
 
-  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #1d065e;
-      color: #fff;
-      line-height: 1.6;
-      background-image: linear-gradient(43deg, #13065f 0%, #260658 46%, #230553 100%);
-    }
-
-    h1 {
-      text-align: center;
-      padding-top: 20rem;
-      font-size: 55px;
-      color: #ffd000;
-      letter-spacing: 2px;
-      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
-    }
-
-    .i{
-      text-align: center;
-      padding-top: 0.5rem;
-      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
-    }
-
-    hr {
-     height: 2px;
-     background-color: #ffd000;
-     right: 40rem;
-     margin: 10rem ;
-     width: 40%;
-     margin: 0 auto;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 0 1rem;
-    }
-
-    .navmenu {
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     background: #ffee06;
-     color: white;
-     padding: 15px 0;
-     z-index: 1000;
-     display: flex;
-    }
-
-    .menu {
-     max-width: 1200px;
-     margin: 0 auto;
-     display: flex;
-     justify-content: flex-end;
-     align-items: center;
-     padding: 0 20px;
-     gap: 30px;
-    }
-
-    .logo {
-      width: 6.5rem;
-      display: flex;
-      justify-content: flex-start;
-      top: -25px;
-      position: absolute;
-      height: auto
-    }
-
-    .inicio {
-      font-weight: bold;
-      font-size: 1.5rem;
-      color: #1d065e;
-    }
-
-    .menu a {
-      color: #1d065e;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-      border-radius: 30px;
-      transition: background 0.3s ease, color 0.3s ease;
-      font-weight: 500;
-    }
-
-    .menu a:hover {
-      background: #1d065e;
-      color: #ffee06;
-    }
-
-    .livrinho-amarelo {
-     position: absolute;
-     width: 100px;
-     height: auto;
-     top: 200px;
-     left: 50%;
-     transform: translateX(-50%);
-    }
-
-    .outro-livro {
-     position: absolute;
-     width: 200px;
-     height: auto;
-     float: left;
-     transform: rotate(15deg) scale(1.3);
-     margin-top: 80px;
-     margin-left: 175px;
-    }
-
-    .caixinhasobre {
-     background: linear-gradient(180deg, #2b0e7a, #0e0425);
-     border-radius: 30px;
-     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-     padding: 25px;
-     width: 500px;
-     margin-left: 725px;
-     margin-right: 8px;
-     margin-top: 290px;
-     max-height: 550px;
-     
-    }
-    .caixinhasobre h1 {
-      font-size:  28px;
-      font-weight: 700;
-      margin-bottom: 25px;
-      margin-right: 15px;
-      color: #ffee06;
-      transform: translateY(-90%);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .sinopse {
-      text-align: justify;
-      line-height: 1.8;
-      color: whitesmoke;
-      font-family: Times, Times New Roman, serif;
-      font-size: 25px;
-    }
-    .sinopse p {
-      position: relative;
-      top: -300px;
-    }
-
-
-    .detalhes {
-      display: flex;
-      gap: 100px;
-      margin-left: 725px;
-      margin-right: 20px;
-      width: fit-content;
-    }
-
-    .detalhe-item {
-     background: linear-gradient(180deg, #2b0e7a, #0e0425);
-     border-radius: 30px;
-     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-     padding: 20px;
-     width: 200px;
-     height: 200px;
-     margin-top: 20px;
-    }
-
-    .texto-estrela {
-     position: absolute;
-     transform: translate(-95px, 70px);
-     color: rgb(0, 0, 0);
-     font-weight: bold;
-     font-size: 15px;
-    }
-
-    .rot {
-      font-weight: 600;
-      min-width: 120px;
-      color: white;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-    }
-
-    .outra-caixinha {
-     background: linear-gradient(180deg, #2b0e7a, #0e0425);
-     border-radius: 30px;
-     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-     padding: 25px;
-     width: 500px;
-     margin-left: 105px;
-     margin-right: 5px;
-     margin-top: 250px;
-     max-height: 675px;
-     height: 500px;
-    }
-
-    .outra-caixinha h1 {
-      font-size:  28px;
-      font-weight: 700;
-      margin-bottom: 25px;
-      margin-right: 15px;
-      color: #ffee06;
-      transform: translateY(-90%);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .Autora {
-      text-align: justify;
-      line-height: 1.4;
-      color: whitesmoke;
-      font-family: Times, Times New Roman, serif;
-      font-size: 20px;
-      letter-spacing: 1px;
-
-    }
-
-    .Autora p {
-      position: relative;
-      top: -325px;
-    }
-
-    .Autora h2 {
-      position: relative;
-      top: -750px;
-      right: -815px;
-      font-size: 40px;
-      color: #ffee06;
-    }
-
-    .Autora h3 {
-      position: relative;
-      top: -315px;
-      right: -670px;
-    }
-
-    .Autora a{
-      position: relative;
-      top: -315px;
-      right: -830px;
-      color: white;
-      text-decoration: overline;
-    }
-
-    .imagem-Autora {
-      max-width: 800px;
-    }
-
-    .imagem-Autora img {
-      width: 560px;
-      height: auto;
-      margin-left: 600px;
-      margin-right: 200px;
-      top: -800px;
-      position: relative;
-      border-radius: 30px;
-      bottom: 100px;
-    }
-
-    .imagem-Autora h1 {
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-bottom: 10px;
-    }
-
-    .personagens h1 {
-      text-align: center;
-      color: #ffd000;
-      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
-      padding-top: 100px;
-    }
-
-
-    .DIVIZONAS {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 20px;
-      padding: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .card {
-      flex: 1;
-      background: linear-gradient(180deg, #2b0e7a, #0e0425);
-      border-radius: 30px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      max-width: 300px;
-      text-align: center;
-    }
-
-    .card h3 {
-      font-size: 22px;
-      font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
-      color: #ffd000;
-    }
-
-    .card img {
-      display: inline-block;
-    }
-
-    .card h4 {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-
-    .descricao {
-      height: 0;
-      overflow: hidden;
-      transition: height 0.5s ease;
-      padding: 0 20px;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    }
-
-
-    .linha hr {
-     border: none;
-     height: 2px;
-     background-color: #dfdf06; 
-     width: 70%;
-     margin: 0 auto;
-    }
-
-    .linha1 hr {
-     border: none;
-     height: 2px;
-     background-color: #dfdf06; 
-     width: 70%;
-     margin: 215px auto 0 auto;
-    }
-
-    .temas {
-      position: relative;
-      top: -275px;
-
-    }
-
-    .linha3 hr {
-     border: none;
-     height: 2px;
-     background-color: #dfdf06; 
-     width: 70%;
-     margin: 12px auto 0 auto;
-    }
-    .caixas-temas {
-     display: flex;
-     justify-content: center;
-     gap: 20px;
-     flex-wrap: wrap;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #1d065e;
+  color: #fff;
+  line-height: 1.6;
+  background-image: linear-gradient(43deg, #13065f 0%, #260658 46%, #230553 100%);
+}
+h1 {
+  text-align: center;
+  padding-top: 20rem;
+  font-size: 55px;
+  color: #ffd000;
+  letter-spacing: 2px;
+  font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+}
+.i{
+  text-align: center;
+  padding-top: 0.5rem;
+  font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+}
+hr {
+ height: 2px;
+ background-color: #ffd000;
+ right: 40rem;
+ margin: 10rem ;
+ width: 40%;
+ margin: 0 auto;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 1rem;
+}
+.navmenu {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ background: #ffee06;
+ color: white;
+ padding: 15px 0;
+ z-index: 1000;
+ display: flex;
+}
+.menu {
+ max-width: 1200px;
+ margin: 0 auto;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ padding: 0 20px;
+ gap: 30px;
+}
+.logo {
+  width: 6.5rem;
+  display: flex;
+  justify-content: flex-start;
+  top: -25px;
+  position: absolute;
+  height: auto
+}
+.inicio {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #1d065e;
+}
+.menu a {
+  color: #1d065e;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-weight: 500;
+}
+.menu a:hover {
+  background: #1d065e;
+  color: #ffee06;
+}
+.livrinho-amarelo {
+ position: absolute;
+ width: 100px;
+ height: auto;
+ top: 200px;
+ left: 50%;
+ transform: translateX(-50%);
+}
+.outro-livro {
+ position: absolute;
+ width: 200px;
+ height: auto;
+ float: left;
+ transform: rotate(15deg) scale(1.3);
+ margin-top: 80px;
+ margin-left: 175px;
+}
+.caixinhasobre {
+ background: linear-gradient(180deg, #2b0e7a, #0e0425);
+ border-radius: 30px;
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+ padding: 25px;
+ width: 500px;
+ margin-left: 725px;
+ margin-right: 8px;
+ margin-top: 290px;
+ max-height: 550px;
  
-     .caixa-tema1 {
-      background: linear-gradient(180deg, #2b0e7a, #0e0425);
-      border-radius: 30px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-      padding: 25px;
-      width: 250px;
-      top: -100;
-      }
+}
+.caixinhasobre h1 {
+  font-size:  28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  margin-right: 15px;
+  color: #ffee06;
+  transform: translateY(-90%);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.sinopse {
+  text-align: justify;
+  line-height: 1.8;
+  color: whitesmoke;
+  font-family: Times, Times New Roman, serif;
+  font-size: 25px;
+}
+.sinopse p {
+  position: relative;
+  top: -300px;
+}
+.detalhes {
+  display: flex;
+  gap: 100px;
+  margin-left: 725px;
+  margin-right: 20px;
+  width: fit-content;
+}
+.detalhe-item {
+ background: linear-gradient(180deg, #2b0e7a, #0e0425);
+ border-radius: 30px;
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+ padding: 20px;
+ width: 200px;
+ height: 200px;
+ margin-top: 20px;
+}
+.texto-estrela {
+ position: absolute;
+ transform: translate(-95px, 70px);
+ color: rgb(0, 0, 0);
+ font-weight: bold;
+ font-size: 15px;
+}
+.rot {
+  font-weight: 600;
+  min-width: 120px;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+.outra-caixinha {
+ background: linear-gradient(180deg, #2b0e7a, #0e0425);
+ border-radius: 30px;
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+ padding: 25px;
+ width: 500px;
+ margin-left: 105px;
+ margin-right: 5px;
+ margin-top: 250px;
+ max-height: 675px;
+ height: 500px;
+}
+.outra-caixinha h1 {
+  font-size:  28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  margin-right: 15px;
+  color: #ffee06;
+  transform: translateY(-90%);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.Autora {
+  text-align: justify;
+  line-height: 1.4;
+  color: whitesmoke;
+  font-family: Times, Times New Roman, serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.Autora p {
+  position: relative;
+  top: -325px;
+}
+.Autora h2 {
+  position: relative;
+  top: -750px;
+  right: -815px;
+  font-size: 40px;
+  color: #ffee06;
+}
+.Autora h3 {
+  position: relative;
+  top: -315px;
+  right: -670px;
+}
+.Autora a{
+  position: relative;
+  top: -315px;
+  right: -830px;
+  color: white;
+  text-decoration: overline;
+}
+.imagem-Autora {
+  max-width: 800px;
+}
+.imagem-Autora img {
+  width: 560px;
+  height: auto;
+  margin-left: 600px;
+  margin-right: 200px;
+  top: -800px;
+  position: relative;
+  border-radius: 30px;
+  bottom: 100px;
+}
+.imagem-Autora h1 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
 
-    .caixa-tema2 {
-      background: linear-gradient(180deg, #2b0e7a, #0e0425);
-      border-radius: 30px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-      padding: 25px;
-      width: 250px;
-      top: -100;
-      }
+.container-ilustrador {
+  
+}
 
-    .caixa-tema3 {
-      background: linear-gradient(180deg, #2b0e7a, #0e0425);
-      border-radius: 30px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-      padding: 25px;
-      width: 250px;
-      top: -100;
-      }
-
-    .caixas-temas {
-     display: flex;
-     justify-content: center;
-     gap: 20px;
-     flex-wrap: wrap;
-    }
-
-    .caixa-tema1 h2 {
-     text-align: center;
-     color: #ffd000;
-     font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
-     position: relative;
-     top: -20px;
-     right: 3px;
-    }
- 
-
-    .link-pagina {
-      margin: 5rem;
-      text-align: center;
-      z-index: 1;
-      position: relative;
-      top: 25px;
-    }
-
-    .link-pagina a{
-      font-family: Times, Times New Roman, serif;
-      color: whitesmoke;
-      font-size: 1.5rem;
-      text-align: center;
-    }
-
-    #charadas h1{
-      text-align: center
-    }
-
-    /* From Uiverse.io by AlimurtuzaCodes */
-  .btn {
-    border: none;
-    width: 15em;
-    height: 5em;
-    border-radius: 3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    background: #1C1A1C;
-    cursor: pointer;
-    transition: all 450ms ease-in-out;
+.personagens h1 {
+  text-align: center;
+  color: #ffd000;
+  font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+  padding-top: 100px;
+}
+.DIVIZONAS {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card {
+  flex: 1;
+  background: linear-gradient(180deg, #2b0e7a, #0e0425);
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  text-align: center;
+}
+.card h3 {
+  font-size: 22px;
+  font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+  color: #ffd000;
+}
+.card img {
+  display: inline-block;
+}
+.card h4 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.descricao {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease;
+  padding: 0 20px;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.linha hr {
+ border: none;
+ height: 2px;
+ background-color: #dfdf06; 
+ width: 70%;
+ margin: 0 auto;
+}
+.linha1 hr {
+ border: none;
+ height: 2px;
+ background-color: #dfdf06; 
+ width: 70%;
+ margin: 215px auto 0 auto;
+}
+.temas {
+  position: relative;
+  top: -275px;
+}
+.linha3 hr {
+ border: none;
+ height: 2px;
+ background-color: #dfdf06; 
+ width: 70%;
+ margin: 12px auto 0 auto;
+}
+.caixas-temas {
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+ flex-wrap: wrap;
+}
+ .caixa-tema1 {
+  background: linear-gradient(180deg, #2b0e7a, #0e0425);
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  width: 250px;
+  top: -100;
   }
-
-  .sparkle {
-    fill: #AAAAAA;
-    transition: all 800ms ease;
+.caixa-tema2 {
+  background: linear-gradient(180deg, #2b0e7a, #0e0425);
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  width: 250px;
+  top: -100;
   }
-
-  .text {
-    font-weight: 600;
-    color: #AAAAAA;
-    font-size: medium;
+.caixa-tema3 {
+  background: linear-gradient(180deg, #2b0e7a, #0e0425);
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  width: 250px;
+  top: -100;
   }
+.caixas-temas {
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+ flex-wrap: wrap;
+}
+.caixa-tema1 h2 {
+ text-align: center;
+ color: #ffd000;
+ font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+ position: relative;
+ top: -20px;
+ right: 3px;
+}
+.link-pagina {
+  margin: 5rem;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  top: 25px;
+}
+.link-pagina a{
+  font-family: Times, Times New Roman, serif;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  text-align: center;
+}
+#charadas h1{
+  text-align: center
+}
+/* From Uiverse.io by AlimurtuzaCodes */
+.btn {
+  border: none;
+  width: 15em;
+  height: 5em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #1C1A1C;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+}
+.sparkle {
+  fill: #AAAAAA;
+  transition: all 800ms ease;
+}
+.text {
+  font-weight: 600;
+  color: #AAAAAA;
+  font-size: medium;
+}
+.btn:hover {
+ background: linear-gradient(0deg,#A47CF3,#683FEA);
+ box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+ inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+ 0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+ 0px 0px 180px 0px #9917FF;
+ transform: translateY(-2px);
+}
+.btn:hover .text {
+  color: white;
+}
+.btn:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+}
+.temas-ti {
+  text-align: center;
+  color: #dfdf06;
+  font-size: 25px;
+  top: -250px;
+  position: relative;
+}
+footer{
+  padding: 0.5rem 0;
+  text-align: center;
+  color: #bbb;
+  border-top: 1px solid #d1d1d1;
+  font-family:sans-serif
+}
 
-  .btn:hover {
-    background: linear-gradient(0deg,#A47CF3,#683FEA);
-    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
-    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
-    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
-    0px 0px 180px 0px #9917FF;
-    transform: translateY(-2px);
-  }
+footer a {
+  color: #AAAAAA;
+  padding-right: 0.5rem;
+}
 
-  .btn:hover .text {
-    color: white;
-  }
-
-  .btn:hover .sparkle {
-    fill: white;
-    transform: scale(1.2);
-  }
-
-  .ilustrador h2 {
-    text-align: center;
-    font-family: Times, Times New Roman, serif;
-    color: #ffd000;
-    margin-top: 100;
-    font-size: 50px;
-    transform: translateY(80px);
-  }
-  .nome h3 {
-    text-align: center;
-    color: #ffd000;
-    font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
-    position: relative;
-    top: 210px;
-    right: 3px;
-    z-index: 10;
-    font-size: 25px;
-
-  }
-
-  .robson-img {
-    background: linear-gradient(180deg, #2b0e7a, #0e0425);
-    border-radius: 30px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    width: 350px;
-    height: 350px;
-    margin-left: 490px;
-    margin-right: 0px;
-    position: relative;
-    bottom: -155px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-
-  .robson-img img {
-    max-width: 200%;
-    max-height: 200%;
-    object-fit: cover;
-    border-radius: 20px;
-  }
-
-  .linkedin a  {
-    position: relative;  
-    top: 105px;
-    right: -635px;
-    color: white;
-    text-decoration: overline;
-  }
-
-  .temas-ti {
-    text-align: center;
-    color: #dfdf06;
-    font-size: 25px;
-    top: -250px;
-    position: relative;
-  }
-
-  .biografia h1 {
-    text-align: center;
-    color: #ffd000;
-    font-size: 37px;
-    position: relative;
-    top: -185px;
-  }
-
-  .caixa-ilustrador h1 {
-    text-align: center;
-    color: #ffd000;
-    font-size: 45px;
-    position: relative;
-    top: -85px;
-  }
-
-  .caixa-ilustrador h2 {
-    text-align: center;
-    color: #ffd000;
-    font-size: 25px;
-    position: relative;
-    top: -45px;
-  }
-
-  .caixa-ilustrador p {
-    text-align: center;
-    color: whitesmoke;
-    font-size: 25px;
-  }
-
-
+.copyright {
+  padding-top: 50px;
+}
 
