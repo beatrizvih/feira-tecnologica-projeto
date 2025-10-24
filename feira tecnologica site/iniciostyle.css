@@ -876,4 +876,78 @@ footer a {
     margin: 0 auto !important;
     display: block !important;
   }
+.lana {
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc;
+}
+.lana img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.bia {
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc;
+}
+.bia img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.cindy {
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc; 
+}
+
+.cindy img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.emi {
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc; 
+}
+.emi img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.elo {
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc; 
+}
+.elo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
