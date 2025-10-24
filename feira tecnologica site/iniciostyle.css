@@ -14,6 +14,154 @@ body {
   line-height: 1.6;
   background-image: linear-gradient(43deg, #13065f 0%, #260658 46%, #230553 100%);
 }
+
+/* ========== RESPONSIVO - VERSAO CORRIGIDA ========== */
+@media (max-width: 768px) {
+  /* HEADER FIXO */
+  .navmenu {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 60px !important;
+    padding: 5px 15px !important;
+    background: #ffee06 !important;
+    z-index: 1000 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  /* LOGO */
+  .logo {
+    position: relative !important;
+    top: 0 !important;
+    width: 50px !important;
+    height: 50px !important;
+    margin: 0 !important;
+  }
+
+  /* BOTÃO HAMBURGUER VISÍVEL */
+  .hamburger-btn {
+    display: block !important;
+    background: none !important;
+    border: none !important;
+    font-size: 24px !important;
+    color: #1d065e !important;
+    cursor: pointer !important;
+    padding: 5px 10px !important;
+  }
+
+  /* MENU ESCONDIDO */
+  .menu {
+    display: none !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    width: 100% !important;
+    background: #ffee06 !important;
+    flex-direction: column !important;
+    padding: 10px 0 !important;
+    z-index: 1001 !important;
+  }
+
+  /* CLASSE PARA MOSTRAR MENU */
+  .menu.mobile-visible {
+    display: flex !important;
+  }
+
+  .menu a {
+    display: block !important;
+    padding: 12px 20px !important;
+    text-align: center !important;
+    width: 100% !important;
+    border-bottom: 1px solid rgba(29, 6, 94, 0.1) !important;
+  }
+
+  /* ESPAÇO PARA O CONTEÚDO */
+  body {
+    padding-top: 70px !important;
+  }
+
+  h1 {
+    padding-top: 2rem !important;
+    font-size: 1.8rem !important;
+  }
+
+  .livrinho-amarelo {
+    top: 100px !important;
+    width: 50px !important;
+  }
+  
+  /* RESTO DO CONTEÚDO RESPONSIVO */
+  .outro-livro {
+    position: relative !important;
+    margin: 20px auto !important;
+    float: none !important;
+    transform: rotate(15deg) scale(0.8) !important;
+  }
+  
+  .caixinhasobre {
+    position: relative !important;
+    width: 90% !important;
+    margin: 20px auto !important;
+  }
+  
+  .sinopse p {
+    position: static !important;
+    font-size: 1rem !important;
+  }
+  
+  .detalhes {
+    flex-direction: column;
+    margin: 20px auto !important;
+    gap: 15px;
+  }
+  
+  .outra-caixinha {
+    position: relative !important;
+    width: 90% !important;
+    margin: 20px auto !important;
+  }
+  
+  .Autora p,
+  .Autora h2,
+  .Autora h3,
+  .Autora a {
+    position: static !important;
+    text-align: center;
+    margin: 10px 0 !important;
+  }
+  
+  .imagem-Autora img {
+    position: relative !important;
+    width: 90% !important;
+    margin: 20px auto !important;
+    display: block;
+  }
+  
+  .DIVIZONAS {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    width: 90% !important;
+    margin-bottom: 20px;
+  }
+  
+  .container-temas {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .caixa-temas {
+    width: 90% !important;
+    margin-bottom: 20px;
+    height: auto !important;
+  }
+}
+
 h1 {
   text-align: center;
   padding-top: 20rem;
@@ -238,30 +386,48 @@ hr {
 }
 
 .container-ilustrador {
-  background: linear-gradient(180deg, #2b0e7a, #0e0425);
-  border-radius: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  padding: 25px;
-  width: 500px;
-  margin-left: 450px;
-  margin-right: 5px;
-  margin-top: 280px;
-  max-height: 675px;
-  height: 600px;
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 21.5rem;
 }
 
 .container-ilustrador h2 {
   color: #ffd000;
   text-align: center;
+  font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+  font-size: 40px;
 }
+
+.link-ilustrador {
+  display: inline-block;
+  justify-content: center;
+  color: white;
+  font-size: 25px
+}
+
 .container-ilustrador h3 {
   color: #ffd000;
   text-align: center;
+  font-size: 25px;
 }
  .container-ilustrador img {
   display: block;
   margin: 0 auto;
   border-radius: 22px;
+  width: 360px;
+}
+
+.caixa-ilustrador p {
+  font-size: 23px;
+}
+
+.caixa-ilustrador {
+  background: linear-gradient(180deg, #2b0e7a, #0e0425);
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 500px;
 }
 
 .personagens h1 {
@@ -455,3 +621,259 @@ footer a {
   padding-top: 50px;
 }
 
+/* ========== CORREÇÃO DOS ELEMENTOS SOBREPOSTOS ========== */
+@media (max-width: 768px) {
+  /* TÍTULO INICIAL */
+  h1 {
+    padding-top: 4rem !important;
+    font-size: 1.8rem !important;
+    text-align: center;
+    margin-bottom: 1rem !important;
+  }
+
+  .i {
+    font-size: 1rem !important;
+    text-align: center;
+    margin-bottom: 2rem !important;
+  }
+
+  .livrinho-amarelo {
+    top: 80px !important;
+    width: 50px !important;
+  }
+
+  /* SOBRE O LIVRO - ORGANIZA EM COLUNA */
+  #sobre-o-livro {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+    padding: 20px 0 !important;
+  }
+
+  .outro-livro {
+    order: 1 !important;
+    position: relative !important;
+    margin: 0 auto 20px !important;
+    transform: rotate(15deg) scale(0.9) !important;
+  }
+
+  .sobre {
+    order: 2 !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .caixinhasobre {
+    order: 1 !important;
+    width: 95% !important;
+    margin: 0 auto 20px !important;
+    max-height: none !important;
+  }
+
+  .detalhes {
+    order: 2 !important;
+    width: 95% !important;
+    margin: 0 auto !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+
+  .detalhe-item {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 120px !important;
+  }
+
+  /* AUTORA - FOTO E BIOGRAFIA LADO A LADO */
+  #autora {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+    padding: 20px 0 !important;
+  }
+
+  .outra-caixinha {
+    order: 1 !important;
+    width: 95% !important;
+    margin: 0 auto !important;
+    height: auto !important;
+    min-height: 400px !important;
+  }
+
+  .Autora p,
+  .Autora h2,
+  .Autora h3,
+  .Autora a {
+    position: static !important;
+    text-align: center !important;
+    margin: 15px 0 !important;
+  }
+
+  .imagem-Autora {
+    order: 2 !important;
+    width: 95% !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+
+  .imagem-Autora img {
+    position: static !important;
+    width: 90% !important;
+    max-width: 300px !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+
+  /* ILUSTRADOR - CORRIGE CONTEÚDO INDO PRO LADO */
+  .container-ilustrador {
+    padding: 2rem 1rem !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .container-ilustrador h2 {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .container-ilustrador h3 {
+    font-size: 1.2rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .container-ilustrador img {
+    width: 80% !important;
+    max-width: 250px !important;
+    margin: 0 auto 1rem !important;
+  }
+
+  .caixa-ilustrador {
+    width: 95% !important;
+    margin: 0 auto !important;
+    padding: 20px !important;
+  }
+
+  .caixa-ilustrador p {
+    font-size: 1rem !important;
+    text-align: center !important;
+  }
+
+  /* REMOVE MARGENS E PADDINGS PROBLEMÁTICOS */
+  .linha1 hr,
+  .linha3 hr {
+    margin: 2rem auto !important;
+    width: 80% !important;
+  }
+}
+
+/* ========== CORREÇÃO ESTRELINHAS E IMAGEM AUTORA ========== */
+@media (max-width: 768px) {
+  /* CORREÇÃO DAS ESTRELINHAS */
+  .detalhes {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 15px !important;
+    width: 100% !important;
+    margin: 20px auto !important;
+  }
+
+  .detalhe-item {
+    width: 90% !important;
+    height: 120px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 15px !important;
+  }
+
+  .rot {
+    font-size: 1.1rem !important;
+    margin-bottom: 10px !important;
+    text-align: center !important;
+  }
+
+  .valor {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .estrela {
+    width: 30px !important;
+    height: 30px !important;
+    margin-right: 10px !important;
+  }
+
+  .texto-estrela {
+    position: static !important;
+    transform: none !important;
+    color: white !important;
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+  }
+
+  /* CORREÇÃO IMAGEM AUTORA - SOBE A IMAGEM */
+  #autora {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    padding: 10px 0 !important;
+  }
+
+  .outra-caixinha {
+    order: 1 !important;
+    width: 95% !important;
+    margin: 0 auto 10px !important;
+    height: auto !important;
+    min-height: 300px !important;
+    padding: 20px !important;
+  }
+
+  .Autora {
+    text-align: center !important;
+  }
+
+  .Autora p {
+    font-size: 1rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 15px !important;
+  }
+
+  .Autora h2 {
+    font-size: 1.3rem !important;
+    margin: 10px 0 !important;
+    color: #ffee06 !important;
+  }
+
+  .Autora h3 {
+    font-size: 1.1rem !important;
+    margin: 5px 0 10px !important;
+  }
+
+  .Autora a {
+    display: inline-block !important;
+    margin: 10px 0 !important;
+    font-size: 1rem !important;
+  }
+
+  .imagem-Autora {
+    order: 2 !important;
+    width: 95% !important;
+    margin: 10px auto 0 !important;
+  }
+
+  .imagem-Autora img {
+    width: 80% !important;
+    max-width: 250px !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+}
