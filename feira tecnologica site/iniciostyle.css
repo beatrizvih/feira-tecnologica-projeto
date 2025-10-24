@@ -530,10 +530,3 @@ footer a {
   max-height: 100%;
   object-fit: contain;
 }
-.container-sobre {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 20px;
-}
