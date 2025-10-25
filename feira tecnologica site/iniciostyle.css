@@ -1120,3 +1120,32 @@ footer a {
  margin: 12px auto 0 auto;
  margin-top: 400px;
 }
+
+@media (max-width: 768px) {
+  /* SOBRE NÓS */
+  .container-sobre {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 25px !important;
+    padding: 10px 0 !important;
+  }
+
+  .container-sobre > div {
+    width: 90% !important;
+    max-width: 350px !important;
+  }
+
+  .container-sobre img {
+    width: 80% !important;
+    max-width: 200px !important;
+    height: auto !important;
+  }
+
+  .container-sobre p,
+  .container-sobre h3,
+  .container-sobre a {
+    font-size: 1rem !important;
+    text-align: center !important;
+  }
+}
